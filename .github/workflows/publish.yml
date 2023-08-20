@@ -26,4 +26,5 @@ jobs:
       # NOTE: increments/qiita-cli/actions/publish の代わりにローカルの publish を利用
       - uses: ./actions/publish
         with:
+          root: custom/root/directory
           qiita-token: ${{ secrets.QIITA_TOKEN }}
